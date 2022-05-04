@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://schemas.brigade.sh/schemas-v2/project.json
+apiVersion: brigade.sh/v2
+kind: Project
+metadata:
+  id: go-libgit2
+description: Brigade's Go Tools built with Brigade 2!
+spec:
+  eventSubscriptions:
+  - source: brigade.sh/github
+    qualifiers:
+      repo: brigadecore/go-libgit2
+    types:
+    - ci:pipeline_requested
+    - ci:job_requested
+    - cd:pipeline_requested
+  workerTemplate:
+    git:
+      cloneURL: https://github.com/brigadecore/go-libgit2.git
+    jobPolicies:
+      allowPrivileged: true

@@ -1,0 +1,6 @@
+{
+  "name": "go-libgit2-ci-cd",
+  "dependencies": {
+    "@brigadecore/brigadier": "^2.4.0"
+  }
+}
