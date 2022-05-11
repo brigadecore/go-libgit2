@@ -1,3 +1,7 @@
+> ⚠️&nbsp;&nbsp;__This repository is archived because Brigade and related
+> projects are not currently making use of the image built from the source in
+> the this repository__.
+
 # Brigade Go + libgit2 Image
 
 ![build](https://badgr.brigade2.io/v1/github/checks/brigadecore/go-libgit2/badge.svg?appID=99005)
